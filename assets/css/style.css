@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --color-white: #FFFFFF;
+    --color-gray: #A3A3A3;
+    --background-color: #F7F5FD;
+    --color-dark-gray: #464646;
+    --color-laranja: #FFB050;
+    --color-border: #ECECEC;
+    --color-azul: #4894FF;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--background-color);
+    font-size: 16px;
+    min-height: 100vh;
+}
+
+.principal{
+    padding: 0 16px;
+}
+
+.imagens{
+    width: 32px;
+    border-radius: 50%;
+}
+
+.principal__doutora-imagem{
+    width: 57px;
+    border-radius: 50%;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+    background-color: var(--color-white);
+}
+
+.cabecalho__hora{
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 16px;
+}
+
+.cabecalho__images{
+    width: auto;
+}
+
+.cabecalho__images img{
+    margin-right: 16px;
+}
+
+
+/* sessao principal */
+
+.principal__doutora{
+    display: flex;
+    align-items: center;
+    margin: 32px auto 30px auto;
+}
+
+.principal__doutora-descricao{
+    margin-left: 16px;
+}
+
+.principal__titulo{
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.principal__subtitulo{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-gray);
+}
+
+/* agenda do dia */
+
+.agenda__do__dia{
+    margin-bottom: 32px;
+}
+
+.agenda__do__dia-titulo{
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--color-dark-gray);
+    margin-bottom: 8px;
+}
+
+/* clientes */
+
+.clientes{
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 20px 16px;
+    background-color: var(--color-white);
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 3px;
+}
+
+.clientes__descricao{
+    margin-left: 16px;
+}
+
+.clientes__descricao-titulo{
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.clientes__descricao-parte2{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.clientes__descricao-subtitulo{
+    font-size: 12px;
+    color: var(--color-gray);
+    font-weight: 400;
+}
+
+.parte__esquerda{
+    display: flex;
+    align-items: center;
+}
+
+/* horarios */
+
+.horarios{
+    border-radius: 0 0 8px 8px;
+    background-color: var(--color-white);
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+.horarios__subtitulo{
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--color-dark-gray);
+    margin-bottom: 8px;
+}
+
+.horarios__botoes a{
+    text-decoration: none;
+}
+
+.horarios__botoes{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    gap: 15px;
+}
+
+.horarios__botoes-laranja{
+    padding: 13px 16px;
+    background-color: var(--color-laranja);
+    border-radius: 8px;
+    color: var(--color-white);
+    width: 50%;
+}
+
+.horarios__botoes-branco{
+    padding: 13px 16px;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    width: 50%;
+    color: var(--color-dark-gray);
+}
+
+.horarios__botoes-azul{
+    background-color: var(--color-azul);
+    padding: 15px 16px;
+    border-radius: 8px;
+    width: 100%;
+    color: var(--color-white);
+}
+
+/* Rodape */
+
+.rodape{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 12px 28px;
+    border-radius: 12px 12px 0 0;
+    background-color: var(--color-white);
+
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+    font-size: 12px;
+    font-weight: 400;
+
+    box-shadow: 0px -8px 9px -10px #888888;
+}
+
+.rodape__consultas-texto{
+    color: var(--color-azul);
+}
+
+.rodape__atendimento-texto, .rodape__relatorios-texto, .rodape__menu-texto{
+    color: var(--color-dark-gray);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+/* botao flutuante */
+
+.botao_mais{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.botao_checked{
+    background-color: red;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+}
+
+.container{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+    display: none;
+}
+
+.container__lista{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    align-items: end;
+    bottom: 20vh;
+    right: 10px;
+}
+
+.container__lista-content{
+    display: flex;
+    align-items: center;
+}
+
+.container__lista__content-texto{
+    background-color: var(--color-white);
+    padding: 4px 8px 4px 8px;
+    border-radius: 15px;
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+}
