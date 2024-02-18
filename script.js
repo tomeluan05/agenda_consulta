@@ -1,7 +1,7 @@
-const botao_mais = document.querySelector('.botao_mais')
+const botao__mais = document.querySelector('.botao__mais')
 const container = document.querySelector('.container')
 
-botao_mais.addEventListener('click',()=>{
+botao__mais.addEventListener('click',()=>{
     if(container.style.display == 'flex'){
         container.style.display = 'none';
     }
@@ -9,3 +9,4 @@ botao_mais.addEventListener('click',()=>{
         container.style.display = 'flex';
     }
 })
+
